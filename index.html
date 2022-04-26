@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="./img/icon-page.png"> 
+   <link href="./css/style.css" rel="stylesheet" type="text/css" />
+   <title>Адаптивный сайт</title>
+</head>
+
+<body>
+
+   <!--    Header    -->
+
+   <header class="header flex-align-center">
+      <div class="logo">
+         <img src="./img/logo.svg" alt="logo">
+      </div>
+
+      <nav class="header-nav header-nav-close">
+         <div class="search-box">
+            <form action="" class="form-search flex-align-center">
+               <label class="search-icon" for="search"></label>
+
+               <input class="search" type="search" name="" id="search" placeholder="Поиск">
+            </form>
+         </div>
+
+         <ul class="header-box">
+            <li class="header-item">
+               <a href="./page/create.html" class="link header-link">предложить инициативу</a>
+            </li>
+            <li class="header-item">
+               <a href="./page/rules.html" class="link header-link">правила работы</a>
+            </li>
+            <li class="header-item">
+               <a href="#feedback" class="link header-link">обратная связь</a>
+            </li>
+            <li  class="header-item">
+               <a href="./page/login.html" class="button button-normal link" type="button">войти</a>
+            </li>
+         </ul>
+      </nav>
+
+      <button class="header-menu">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+
+   </header>
+
+
+   <!--    Main    -->
+
+   <main class="page">
+
+      <!--   Section-slider   -->
+
+      <section class="slider-section">
+         <div class="slider" id="slider">
+
+            <div class="slide slide1 slideActive">
+               <img src="./img/2.jpg" alt="" class="slide-img">
+               <div class="slide-content flex-column">
+                  <h1 class="slide-title">
+                     Дом моего соседа
+                  </h1>
+                  <div class="text-box">
+                     <p class="slide-text">
+                        Дома есть не у всех. Видя бездомного на улице, мы отворачиваемся от него и проходим мимо.
+                     </p>
+
+                     <p class="slide-text">
+                        Хватит это терпеть! Хороший дом начинается с проекта! Имея за плечами более 20 лет опыта мы разработали удобные проекты.
+                     </p>
+                  </div>
+                  <a href="" class="button button-normal link">Подробнее</a>
+
+                  <div class="control-box">
+                     <button class="control left" onclick="sliderChange('slider', 'left');">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class = "control-img">
+                           <path d="M19 12H5 M12 19L5 12L12 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </button>
+                     <button class="control right" onclick="sliderChange('slider', 'right');">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class = "control-img">
+                           <path d="M5 12H19 M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                           
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="slide slide2 slideInactive">
+               <img src="./img/1.jpg" alt="" class="slide-img">
+               <div class="slide-content">
+                  <h1 class="slide-title">
+                     Бумаге – вторая жизнь
+                  </h1>
+                  <div class="text-box">
+                     <p class="slide-text">
+                        На деньги за сдачу макулатуры мы купим саженцы деревьев и в нашей любимой Дубне появится еще один красивый уголок ИТ-парк Хоппер.  
+                     </p>
+
+                     <p class="slide-text">
+                        Присоединяйтесь к акции, приносите газеты, журналы, книги, бумагу, картон, гофрокартон и складывайте на Бали.
+                     </p>
+                  </div>
+                  <a href="" class="button button-normal link">Подробнее</a>
+
+                  <div class="control-box">
+                     <button class="control left" onclick="sliderChange('slider', 'left');">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class = "control-img">
+                           <path d="M19 12H5 M12 19L5 12L12 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </button>
+                     <button class="control right" onclick="sliderChange('slider', 'right');">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class = "control-img">
+                           <path d="M5 12H19 M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                           
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="slide slide3 slideInactive">
+               <img src="./img/3.jpg" alt="" class="slide-img">
+               <div class="slide-content">
+                  <h1 class="slide-title">
+                     Козловский. 1945
+                  </h1>
+                  <div class="text-box">
+                     <p class="slide-text">
+                        Наш соотечественник, Николай Анатольевич Козловский, поэт, ветеран, певец и просто душа компании — тяжело заболел.
+                     </p>
+
+                     <p class="slide-text">
+                        Мы открываем сбор средств. Они очень помогут дедушке в этот нелегкий час. Спасибо!
+                     </p>
+                  </div>
+                  <a href="" class="button button-normal link">Подробнее</a>
+
+                  <div class="control-box">
+                     <button class="control left" onclick="sliderChange('slider', 'left');">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class = "control-img">
+                           <path d="M19 12H5 M12 19L5 12L12 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </button>
+                     <button class="control right" onclick="sliderChange('slider', 'right');">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class = "control-img">
+                           <path d="M5 12H19 M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                           
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--   Section-card   -->
+
+      <section class="section-cards">
+         <div class="card-box">
+            <div class="title-box">
+               <h1 class="card-title">
+                  Инициативы
+               </h1>
+               <a href="#" class="button button-normal link card-button">Предложить инициативу</a>
+               <a href="#" class="link card-link">+</a>
+            </div>
+
+            <div class="card-conteiner">
+               <div class="card">
+                  <div class="box-img">
+                     <img src="./img/card1.jpg" alt="" class="card-img">
+                  </div>
+                  <div class="card-text">
+                     <h4>
+                        Посади дерево
+                     </h4>
+      
+                     <p>
+                        Новый супермаршрут для пешеходов, велосипедистов и любителей бега и активного отдыха планируется северо-вост...
+                     </p>
+      
+                     <div class="like">
+                        <img src="./img/thumbs-up.svg" alt="like"> 
+                        <p>(22)</p>
+                        <p>
+                           Голосовать
+                        </p>                  
+                     </div>
+                  </div>
+                </div>
+                  
+               <div class="card">
+                  <div class="box-img">
+                     <img src="./img/card2.jpg" alt="" class="card-img">
+                  </div>
+                  <div class="card-text">
+                     <h4>
+                        Спасаем океаны
+                     </h4>
+      
+                     <p>
+                        Посмотреть кино на открытом воздухе в жаркую погоду для жителей столицы в последние годы стало привычным делом...
+                     </p>
+      
+                     <div class="like">
+                        <img src="./img/thumbs-up.svg" alt="like"> 
+                        <p>(22)</p>
+                        <p>
+                           Голосовать
+                        </p>                  
+                     </div>
+                  </div>
+               </div>
+   
+               <div class="card">
+                  <div class="box-img">
+                     <img src="./img/card3.jpg" alt="" class="card-img">
+                  </div>
+   
+                  <div class="card-text">
+                     <h4>
+                        Помоги бездомному выжить
+                     </h4>
+      
+                     <p>
+                        Новый супермаршрут для пешеходов, велосипедистов и любителей бега и активного отдыха планируется северо-вост...
+                     </p>
+      
+                     <div class="like">
+                        <img src="./img/thumbs-up.svg" alt="like"> 
+                        <p>(22)</p>
+                        <p>
+                           Голосовать
+                        </p>                  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+   </main>
+
+   <!-- / Main   -->
+
+   <!--   Footer   -->
+
+   <footer class="footer" id="feedback">
+      <form action="" class="form-feedback flex-column">
+         <h3 class="footer-title">
+            Обратная связь
+         </h3>
+
+         <input class="feedback input" type="text" name="fio" id="fio" placeholder="ФИО" required maxlength="75">
+         <input class="feedback input" type="text" name="email" id="email" placeholder="Почта" required maxlength="75">
+         <input class="feedback input" type="text" name="phone" id="phone" placeholder="Телефон" required maxlength="75">
+         <input class="feedback input" type="text" name="about" id="about"  placeholder="Описание" required maxlength="75">
+
+         <button class="button button-revers link feedback-button">ОТПРАВИТЬ</button>
+      </form>
+      <div class="info flex-column">
+         <h3 class="footer-title">
+            Контакты
+         </h3>
+
+         <p class="footer-text">8 963 678 82 66</p>
+         <p class="footer-text">kis.19@uni-dubna.ru</p>
+         <p class="footer-text">Проспекл Луначарского, д 65 офис 3</p>
+         <p class="footer-text cop">(с) копирайт 2021</p>
+      </div>
+   </footer>
+
+   <script src="./js/menu.js"></script>
+   <script src="./js/slider.js"></script>
+</body>
+
+</html>

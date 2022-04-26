@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="../img/icon-page.png"> 
+   <link href="../css/style.css" rel="stylesheet" type="text/css" />
+   <title>Адаптивный сайт</title>
+</head>
+
+<body>
+
+   <!--    Header    -->
+
+   <header class="header flex-align-center">
+      <div class="logo">
+         <a href="../index.html"><img src="../img/logo.svg" alt="logo"></a>
+      </div>
+
+      <nav class="header-nav header-nav-close">
+         <div class="search-box">
+            <form action="" class="form-search flex-align-center">
+               <label class="search-icon" for="search"></label>
+
+               <input class="search" type="search" name="" id="search" placeholder="Поиск">
+            </form>
+         </div>
+
+         <ul class="header-box">
+            <li class="header-item">
+               <a href="./create.html" class="link header-link">предложить инициативу</a>
+            </li>
+            <li class="header-item">
+               <a href="./rules.html" class="link header-link">правила работы</a>
+            </li>
+            <li class="header-item">
+               <a href="#feedback" class="link header-link">обратная связь</a>
+            </li>
+            <li  class="header-item">
+               <a class="button button-normal link" type="button">войти</a>
+            </li>
+         </ul>
+      </nav>
+
+      <button class="header-menu">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+
+   </header>
+
+
+   <!--    Main    -->
+
+   <main class="page">
+
+      <!--   Section-slider   -->
+
+      <section class="section-login">
+         <div class="wrapper">
+            <div class="box-in register-active">
+               <div class="button-rg-lg">
+                  <button class="button-lg">Вход</button>
+                  <button class="button-rg button-in_active">Регистрация</button>
+               </div>
+               <div class="login">
+                  <input class="login-input input" type="text" name="email" id="email" placeholder="Почта" required maxlength="75">
+                  <input class="login-input input" type="text" name="password" id="password" placeholder="Пароль" required maxlength="75">
+                  <button class="button button-normal link login-button">Войти</button>
+               </div>
+               <div class="register">
+                  <input class="login-input input" type="text" name="fio" id="fio" placeholder="ФИО" required maxlength="100">
+                  <input class="login-input input" type="text" name="datebh" id="datebh"  placeholder="Дата рождения" required maxlength="10">
+                  <input class="login-input input" type="text" name="phone" id="phone" placeholder="Телефон" required maxlength="10">
+                  <input class="login-input input" type="text" name="address" id="address" placeholder="Адрес проживания" required maxlength="120">
+                  <input class="login-input input" type="text" name="email" id="email" placeholder="Почта" required maxlength="75">
+                  <input class="login-input input" type="text" name="password" id="password" placeholder="Пароль" required maxlength="75">
+                  <label>
+                     <input type="checkbox" name="privacy" id="privacy" value="yes" required>
+                     Согласен с <a href="#">политикой конфиденциальности</a>
+                  </label>
+                  <button class="button button-normal link login-button">Зарегестрироваться</button>
+               </div>
+            </div>
+         </div>   
+      </section>
+   </main>
+
+   <!-- / Main   -->
+
+   <!--   Footer   -->
+
+   <footer class="footer" id="feedback">
+      <form action="" class="form-feedback flex-column">
+         <h3 class="footer-title">
+            Обратная связь
+         </h3>
+
+         <input class="feedback input" type="text" name="fio" id="fio" placeholder="ФИО" required maxlength="75">
+         <input class="feedback input" type="text" name="email" id="email" placeholder="Почта" required maxlength="75">
+         <input class="feedback input" type="text" name="phone" id="phone" placeholder="Телефон" required maxlength="75">
+         <input class="feedback input" type="text" name="about" id="about"  placeholder="Описание" required maxlength="75">
+
+         <button class="button button-revers link feedback-button">ОТПРАВИТЬ</button>
+      </form>
+      <div class="info flex-column">
+         <h3 class="footer-title">
+            Контакты
+         </h3>
+
+         <p class="footer-text">8 963 678 82 66</p>
+         <p class="footer-text">kis.19@uni-dubna.ru</p>
+         <p class="footer-text">Проспекл Луначарского, д 65 офис 3</p>
+         <p class="footer-text cop">(с) копирайт 2021</p>
+      </div>
+   </footer>
+
+   <script src="../js/menu.js"></script>
+   <script src="../js/login.js"></script>
+</body>
+
+</html>

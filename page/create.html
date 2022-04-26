@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="../img/icon-page.png"> 
+   <link href="../css/style.css" rel="stylesheet" type="text/css" />
+   <title>Адаптивный сайт</title>
+</head>
+
+<body>
+
+   <!--    Header    -->
+
+   <header class="header flex-align-center">
+      <div class="logo">
+         <a href="../index.html"><img src="../img/logo.svg" alt="logo"></a>
+      </div>
+
+      <nav class="header-nav header-nav-close">
+         <div class="search-box">
+            <form action="" class="form-search flex-align-center">
+               <label class="search-icon" for="search"></label>
+
+               <input class="search" type="search" name="" id="search" placeholder="Поиск">
+            </form>
+         </div>
+
+         <ul class="header-box">
+            <li class="header-item">
+               <a class="link header-link link-active">предложить инициативу</a>
+            </li>
+            <li class="header-item">
+               <a href="./rules.html" class="link header-link">правила работы</a>
+            </li>
+            <li class="header-item">
+               <a href="#feedback" class="link header-link">обратная связь</a>
+            </li>
+            <li  class="header-item">
+               <a href="./login.html" class="button button-normal link" type="button">войти</a>
+            </li>
+         </ul>
+      </nav>
+
+      <button class="header-menu">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+
+   </header>
+
+
+   <!--    Main    -->
+
+   <main class="page">
+
+      <!--   Section-slider   -->
+
+      <section class="section-create">
+         <div class="wrapper">
+            <h1 class="card-title">
+               Новая инициатива
+            </h1>
+            <div class="create-box">
+               <div class="create-form">
+                  <form action="" class="form-create flex-column">
+                     <input class="input create-input" type="text" name="title" id="title" placeholder="Заголовок" maxlength="60">
+                     <textarea class="input create-textarea" name="about" id="about" placeholder="Описание" maxlength="350"></textarea>
+                     <label class="flex-column fileload">
+                        <img class="fileload__img" src="../img/download.svg" alt="download">
+                        <h3 class="fileload__title">Загрузите файл</h3>
+                        <h4 class="fileload__sub-title">Или перетяните в это поле</h4>
+                        <input class="fileload__input" type="file" name="fileInitiative" id="fileInitiative">
+                     </label>
+                     
+                     <button class="button button-normal link create-button">ОТПРАВИТЬ</button>
+                  </form>
+               </div>
+      
+               <div class="create-text-box">
+                  <p class="create-text">
+                     Предложите что-то интересное и люди Вас поддержат. Введите заголовок с продающим текстом, тогда все будет круто и все проголосуют за Вашу инициативу
+                  </p>
+                  <p class="create-text">
+                     Убедитесь в том, что похожей инициативы нет в базе, заполните все поля формы и нажмите «ОТПРАВИТЬ».
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--   Section-card   -->
+
+      <section class="section-cards">
+         <div class="card-box">
+            <div class="title-box">
+               <h1 class="card-title">
+                  Инициативы
+               </h1>
+               <a href="#" class="button button-normal link card-button">Предложить инициативу</a>
+               <a href="#" class="link card-link">+</a>
+            </div>
+
+            <div class="card-conteiner">
+               <div class="card">
+                  <div class="box-img">
+                     <img src="../img/card1.jpg" alt="" class="card-img">
+                  </div>
+                  <div class="card-text">
+                     <h4>
+                        Посади дерево
+                     </h4>
+      
+                     <p>
+                        Новый супермаршрут для пешеходов, велосипедистов и любителей бега и активного отдыха планируется северо-вост...
+                     </p>
+      
+                     <div class="like">
+                        <img src="../img/thumbs-up.svg" alt="like"> 
+                        <p>(22)</p>
+                        <p>
+                           Голосовать
+                        </p>                  
+                     </div>
+                  </div>
+                </div>
+                  
+               <div class="card">
+                  <div class="box-img">
+                     <img src="../img/card2.jpg" alt="" class="card-img">
+                  </div>
+                  <div class="card-text">
+                     <h4>
+                        Спасаем океаны
+                     </h4>
+      
+                     <p>
+                        Посмотреть кино на открытом воздухе в жаркую погоду для жителей столицы в последние годы стало привычным делом...
+                     </p>
+      
+                     <div class="like">
+                        <img src="../img/thumbs-up.svg" alt="like"> 
+                        <p>(22)</p>
+                        <p>
+                           Голосовать
+                        </p>                  
+                     </div>
+                  </div>
+               </div>
+   
+               <div class="card">
+                  <div class="box-img">
+                     <img src="../img/card3.jpg" alt="" class="card-img">
+                  </div>
+   
+                  <div class="card-text">
+                     <h4>
+                        Помоги бездомному выжить
+                     </h4>
+      
+                     <p>
+                        Новый супермаршрут для пешеходов, велосипедистов и любителей бега и активного отдыха планируется северо-вост...
+                     </p>
+      
+                     <div class="like">
+                        <img src="../img/thumbs-up.svg" alt="like"> 
+                        <p>(22)</p>
+                        <p>
+                           Голосовать
+                        </p>                  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+   </main>
+
+   <!-- / Main   -->
+
+   <!--   Footer   -->
+
+   <footer class="footer" id="feedback">
+      <form action="" class="form-feedback flex-column">
+         <h3 class="footer-title">
+            Обратная связь
+         </h3>
+
+         <input class="feedback input" type="text" name="fio" id="fio" placeholder="ФИО" required maxlength="75">
+         <input class="feedback input" type="text" name="email" id="email" placeholder="Почта" required maxlength="75">
+         <input class="feedback input" type="text" name="phone" id="phone" placeholder="Телефон" required maxlength="75">
+         <input class="feedback input" type="text" name="about" id="about"  placeholder="Описание" required maxlength="75">
+
+         <button class="button button-revers link feedback-button">ОТПРАВИТЬ</button>
+      </form>
+      <div class="info flex-column">
+         <h3 class="footer-title">
+            Контакты
+         </h3>
+
+         <p class="footer-text">8 963 678 82 66</p>
+         <p class="footer-text">kis.19@uni-dubna.ru</p>
+         <p class="footer-text">Проспекл Луначарского, д 65 офис 3</p>
+         <p class="footer-text cop">(с) копирайт 2021</p>
+      </div>
+   </footer>
+
+   <script src="../js/menu.js"></script>
+</body>
+
+</html>
